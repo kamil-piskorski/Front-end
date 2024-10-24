@@ -1,0 +1,152 @@
+body {
+  height: 100vh;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.grid-container {
+  width: max(50%, 400px);
+  height: 80%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 3px 3px lightgray;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}    
+
+.topic { 
+  height: 210px;
+  grid-area: 1 / 1 / 2 / 3;
+  padding: 20px 30px;
+}
+
+.topic * {
+  margin: 0;
+  padding: 0;
+}
+
+.topic h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+.topic h2 {
+  color: hsl(71, 73%, 54%);
+}
+
+.topic p {
+  color: hsl(0, 0%, 64%);
+  margin-block: 5px;
+}
+.subscription {
+  grid-area: 2 / 1 / 3 / 2;
+  height: 300px;
+  background-color: hsl(179, 70%, 32%);
+  color: white;
+  padding: 10px 30px;
+  margin: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.payment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  height: 50px;
+}
+
+.payment .cost {
+  font-size: 40px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.payment .per-month {
+  color: hsl(0, 0%, 88%);
+}
+
+.subscription h2 {
+  margin-bottom: 0;
+}
+
+
+button {
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 2px 2px 10px gray;
+}
+
+button:hover{
+  background-color: hsl(71, 82%, 57%);
+}
+
+.info {
+  height: 300px;
+  grid-area: 2 / 2 / 3 / 3; 
+  background-color: hsl(179, 62%, 43%);
+  color: white;
+  padding: 10px 30px;
+  border-bottom-right-radius: 10px;
+}
+
+.info h2 {
+  margin: 20px 0 0 0;
+}
+
+.info ul {
+  font-size: 14px;
+  list-style-type: none;
+  list-style-position: outside;
+  padding: 0;
+  color: hsl(0, 0%, 88%);
+}
+
+ul li {
+  margin-top: -5px;
+}
+
+@media (max-width: 375px){
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 1fr 0.8fr;
+  }
+
+  .topic {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .topic h1 {
+    font-size: 22px;
+  }
+
+  .topic h2 {
+    font-size: 18px;
+  }
+  
+  .topic p {
+    font-size: 10px;
+  }
+  
+  .subscription {
+    grid-area: 2 / 1 / 3 / 2;
+    border-bottom-left-radius: 0;
+  }
+
+  .info {
+    grid-area: 3 / 1 / 4 / 2;
+    border-bottom-left-radius: 10px;
+  }
+
+  
+}
