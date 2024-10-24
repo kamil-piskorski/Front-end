@@ -1,0 +1,146 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif;
+  color: hsl(217, 12%, 63%);
+}
+
+p {
+  font-size: 15px;
+  margin: 0;
+}
+
+button {
+  color: hsl(217, 12%, 63%);
+  font-family: 'Overpass', sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  width: 425px;
+  height: 425px;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  border: none;
+  border-radius: 30px;
+  position: relative;
+}
+
+.star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: hsl(216, 12%, 8%, 0.5);
+  border-radius: 50%;
+  margin: 30px;
+}
+
+.how {
+  color: white;
+  margin-left: 35px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-size: 27px;
+  font-weight: 700;
+}
+
+.info {
+  margin-left: 35px;
+  margin-right: 50px;
+}
+
+.ratings {
+  margin-left: 35px;
+  margin-right: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.number {
+  width: 50px;
+  height: 50px;
+  background-color: hsl(216, 12%, 8%, 0.5);
+  border-radius: 50%;
+  margin-top: 40px;
+  border: none;
+}
+
+.number:hover,
+.submit-done {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+  cursor: pointer;
+}
+
+.submit {
+  background-color: hsl(25, 97%, 53%);
+  /* margin: 25px 35px; */
+  width: 355px;
+  padding: 15px;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 30px;
+  left: 35px;
+}
+
+.submit-info {
+  margin-top: 10px;
+  margin-left: 35px;
+  color: red;
+}
+
+.clicked {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.submit:hover {
+  background-color: hsl(25, 81%, 33%);
+  cursor: pointer;
+}
+
+.thankyou {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.selected {
+  width: 160px;
+  margin: 20px auto;
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 9%, 29%);
+  padding: 6px 12px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.second {
+  color: white;
+  margin-left: 35px;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  font-size: 27px;
+  font-weight: 700;
+  width: 150px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.center {
+  text-align: center;
+}
+
