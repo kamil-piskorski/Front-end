@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@300;400;500&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+<body>
+  <div class="grid-container">
+    <div class="report-info">
+      <div class="personal-info">
+        <img src="images/image-jeremy.png" alt="photo of jeremy">
+        <p>Report for</p>
+        <p>Jeremy Robson</p>
+      </div>
+      <div class="type">
+        <div class="daily btn">Daily</div>
+        <div class="weekly btn active">Weekly</div>
+        <div class="monthly btn">Monthly</div>
+      </div>
+    </div>
+    <div class="cards orange">
+      <div class="top">
+        <img src="images/icon-work.svg" alt="work icon">
+      </div>
+      <div class="bot">
+        <div class="category">
+          <div class="title">Work</div>
+          <div class="ellipsis">
+            <a href="#demo-modal"><img src="images/icon-ellipsis.svg" alt="ellipsis icon"></a>
+          </div>
+        </div>
+        <div class="details">
+          <div class="hours">32hrs</div>
+          <div class="last-week">Last week - 36hrs</div>
+        </div>
+      </div>
+    </div>
+    <div class="cards blue">
+      <div class="top">
+        <img src="images/icon-play.svg" alt="play icon">
+      </div>
+      <div class="bot">
+        <div class="category">
+          <div class="title">Play</div>
+          <div class="ellipsis">
+            <a href="#demo-modal"><img src="images/icon-ellipsis.svg" alt="ellipsis icon"></a>
+          </div>
+        </div>
+        <div class="details">
+          <div class="hours">10hrs</div>
+          <div class="last-week">Last Week - 8hrs</div>
+        </div>
+      </div>
+    </div>
+    <div class="cards pink">
+      <div class="top">
+        <img src="images/icon-study.svg" alt="study icon">
+      </div>
+      <div class="bot">
+        <div class="category">
+          <div class="title">Study</div>
+          <div class="ellipsis">
+            <a href="#demo-modal"><img src="images/icon-ellipsis.svg" alt="ellipsis icon"></a>
+          </div>
+        </div>
+        <div class="details">
+          <div class="hours">4hrs</div>
+          <div class="last-week">Last week - 7hrs</div>
+        </div>
+      </div>
+    </div>
+    <div class="cards green">
+      <div class="top">
+        <img src="images/icon-exercise.svg" alt="exercise icon">
+      </div>
+      <div class="bot">
+        <div class="category">
+          <div class="title">Exercise</div>
+          <div class="ellipsis">
+            <a href="#demo-modal"><img src="images/icon-ellipsis.svg" alt="ellipsis icon"></a>
+          </div>
+        </div>
+        <div class="details">
+          <div class="hours">4hrs</div>
+          <div class="last-week">Last Week - 5hrs</div>
+        </div>
+      </div>
+    </div>
+    <div class="cards purple">
+      <div class="top">
+        <img src="images/icon-social.svg" alt="social icon">
+      </div>
+      <div class="bot">
+        <div class="category">
+          <div class="title">Social</div>
+          <div class="ellipsis">
+            <a href="#demo-modal"><img src="images/icon-ellipsis.svg" alt="ellipsis icon"></a>
+          </div>
+        </div>
+        <div class="details">
+          <div class="hours">5hrs</div>
+          <div class="last-week">Last Week - 10hrs</div>
+        </div>
+      </div>
+    </div>
+    <div class="cards yellow">
+      <div class="top">
+        <img src="images/icon-self-care.svg" alt="self-care icon">
+      </div>
+      <div class="bot">
+        <div class="category">
+          <div class="title">Self Care</div>
+          <div class="ellipsis">
+            <a href="#demo-modal"><img src="images/icon-ellipsis.svg" alt="ellipsis icon"></a>
+          </div>
+        </div>
+        <div class="details">
+          <div class="hours">2hrs</div>
+          <div class="last-week">Last Week - 2hrs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="demo-modal" class="modal">
+    <div class="modal__content">
+        <h1>Great job!</h1>
+        <p>Your week was well-balanced</p>
+        <p>There should be something like chart but I don't know how to do it :'D</p>
+        <a href="#" class="modal__close">&times;</a>
+    </div>
+</div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
